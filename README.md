@@ -8,7 +8,7 @@
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## Running analysis
-1. Download & unzip data, should unzip to "UCI Har Dataset"
+1. Download & unzip [data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), should unzip to "UCI Har Dataset"
 2. Move run_analysis.R into the data folder's parent dir
 3. setwd() to dir containing run_analysis.R
 4. Run "runAnalysis()" contained w/in run_analysis.R, creates tidiedMeans.txt  
