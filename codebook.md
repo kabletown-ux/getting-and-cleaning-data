@@ -25,7 +25,7 @@ The dataset includes the following files, among others:
 - 'train/Inertial Signals/body_acc_x_train.txt'
 - 'train/Inertial Signals/body_gyro_x_train.txt'
 
-## Analysis process as described in assignment paged
+## High Level Analysis Process As Described in Assignment Page
 
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
