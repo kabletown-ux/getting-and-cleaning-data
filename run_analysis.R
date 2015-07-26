@@ -68,14 +68,14 @@ runAnalysis <- function() {
     ## Instruction 5) Create a second, independent tidy data set with the average of each variable for each activity and each subject.
     # Column means for all but the subject and activity columns
     limitedColMeans <- function( data ) { colMeans( data[,-c( 1, 2 ) ] ) } ## -c( 1, 2 ) = except cols 1 & 2
-    tidyMeans <- ddply( tidy, .( Subject, Activity ), limitedColMeans )
-    names( tidyMeans )[ -c( 1, 2 ) ] <- paste0( "Mean", names( tidyMeans )[ -c( 1, 2 ) ] )
+    tidiedMeans <- ddply( tidy, .( Subject, Activity ), limitedColMeans )
+    names( tidiedMeans )[ -c( 1, 2 ) ] <- paste0( "Mean", names( tidiedMeans )[ -c( 1, 2 ) ] )
     
     # Write file
-    write.table(tidyMeans, "tidyMeans.txt", row.names = FALSE)
+    write.table( tidiedMeans, "tidiedMeans.txt", row.names = FALSE )
     
     # return tidy'd data
-    tidyMeans
+    tidiedMeans
     
     # Stop the clock: caching data x|yTrain, x|yTest saves time, but only when global env isn't reset...
     #proc.time() - ptm    
