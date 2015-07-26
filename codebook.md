@@ -1,6 +1,6 @@
 # CodeBook
 
-## Data source
+## Data Source
 
 * Data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
@@ -8,9 +8,9 @@
 
 * Description of the dataset & Experiment: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-## The data
+## The Data
 
-The dataset includes the following files:
+The dataset includes the following files, among others:
 
 - 'README.txt'
 - 'features_info.txt': Features described
@@ -20,9 +20,6 @@ The dataset includes the following files:
 - 'train/y_train.txt': Training labels
 - 'test/X_test.txt': Test set
 - 'test/y_test.txt': Test labels
-
-The following files are train and test data
-
 - 'train/subject_train.txt'
 - 'train/Inertial Signals/total_acc_x_train.txt'
 - 'train/Inertial Signals/body_acc_x_train.txt'
@@ -35,3 +32,7 @@ The following files are train and test data
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive activity names.
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+## Process Details
+
+1. Contained w/in source code of run_analysis.R
